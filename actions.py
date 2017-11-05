@@ -63,5 +63,8 @@ def get_funfact():
     """
     print('funfact action') 
     
-    text = "testing fun fact from python"
-    return text
+    text = ["funfact1", "funfact2"]
+    from random import *
+    num = ranint(1, len(text))
+    
+    return text[num-1]
