@@ -1,5 +1,5 @@
 import datetime
-
+from random import *
 
 def choose_action(action):
     text = "Looking for action..."
@@ -64,7 +64,7 @@ def get_funfact():
     print('funfact action') 
     
     text = ["funfact1", "funfact2"]
-    from random import *
+  
     num = randint(1, len(text))
     
     return text[num-1]
