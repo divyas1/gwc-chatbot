@@ -10,6 +10,8 @@ def choose_action(action):
         text = get_time()
     elif action == "date":
         text = get_date()
+    elif action == "funfact":
+        text = get_funfact() 
     else:
         text = "No action matched!"
 
@@ -52,4 +54,14 @@ def get_date():
     day = now.day
     
     text = "The date is %d/%d/%d" % (month, day, year) 
+    return text
+
+
+def get_funfact():
+    """
+    Tells user a fun fact
+    """
+    print('funfact action') 
+    
+    text = "testing fun fact from python"
     return text
