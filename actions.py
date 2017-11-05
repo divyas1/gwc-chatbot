@@ -65,6 +65,6 @@ def get_funfact():
     
     text = ["funfact1", "funfact2"]
     from random import *
-    num = ranint(1, len(text))
+    num = randint(1, len(text))
     
     return text[num-1]
