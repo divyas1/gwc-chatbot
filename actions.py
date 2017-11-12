@@ -14,8 +14,8 @@ def choose_action(action, params):
     elif action == "funfact":
         text = get_funfact()
     elif action == "email":
-        email = params.get("email")
-        text = email(email)
+        given_email = params.get("email")
+        text = email(given_email)
     else:
         text = "No action matched!"
 
@@ -73,12 +73,12 @@ def get_funfact():
     
     return text[num-1]
 
-def email(email):
+def email(given_email):
     """
     Tells user their email
     """
     print('email action')
 
-    text = "Your email is " + str(email)
+    text = "Your email is " + str(given_email)
     return text
 
