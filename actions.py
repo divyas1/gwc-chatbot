@@ -1,11 +1,12 @@
 import datetime
 from random import *
 
-def choose_action(action):
+def choose_action(action, params):
     text = "Looking for action..."
 
     if action == "hello":
-        text = hello()
+        given_name = params.get("given-name")
+        text = hello(given_name)
     elif action == "time":
         text = get_time()
     elif action == "date":
@@ -18,13 +19,13 @@ def choose_action(action):
     return text
 
 
-def hello():
+def hello(given_name):
     """
     Says "Hello World" to the user
     """
     print('hello action')
 
-    text = "Hello World"
+    text = "Hello " + str(given_name)
     return text
 
 
