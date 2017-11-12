@@ -67,7 +67,7 @@ def get_funfact():
     """
     print('funfact action') 
     
-    text = ["A single cloud can weight more than 1 million pounds.", "For every human on Earth there are 1.6 million ants."]
+    text = ["A single cloud can weight more than 1 million pounds.", "For every human on Earth there are 1.6 million ants.", "An ostrich’s eye is bigger than its brain"]
   
     num = randint(1, len(text))
     
