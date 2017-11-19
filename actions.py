@@ -16,6 +16,9 @@ def choose_action(action, params):
     elif action == "email":
         given_email = params.get("email")
         text = email(given_email)
+    elif action == "hello_language":
+        given_language = params.get("given-language")
+        text = hello_language(given_language)
     else:
         text = "No action matched!"
 
@@ -82,3 +85,19 @@ def email(given_email):
     text = "Your email is " + str(given_email)
     return text
 
+def hello_language(given_language):
+    """
+    Tells user hello in  given language
+    """
+    print ('hello_language')
+   
+    if given_language == "Spanish":
+        text = "Hola!"
+    elif given_language == "French":
+        text = "Bonjour!"
+    elif given_language == "Russian":
+        text = "idk russian"
+    else:
+        text = "I dont know that"
+
+    return text
